@@ -5,5 +5,5 @@ body  section > h1#heading{
     background-color: lightgreen;
 }
 body section > p{
-    font-size: large;
+    font-size: larger;
 }

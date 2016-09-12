@@ -19,7 +19,7 @@ var handleDeviceMotionEvent = function(e){
 
 var handleCompassEvent = function(e){
     var compassHeading = e.webkitCompassHeading;
-    document.getElementById("compassHeading").innerHTML = '<b>Heading:</b> ' + compassHeading;
+    document.getElementById("direction").innerHTML = '<b>Heading:</b> ' + compassHeading;
 };
 
 window.addEventListener('deviceorientation', handleOrientationEvent, false);
