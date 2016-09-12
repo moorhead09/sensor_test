@@ -4,3 +4,6 @@ body  section > h1#heading{
     font-size: large;
     background-color: lightgreen;
 }
+body section > p{
+    font-size: large;
+}
