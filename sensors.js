@@ -15,6 +15,13 @@ var handleDeviceMotionEvent = function(e){
     document.getElementById("ax").innerHTML = '<b>X:</b> ' + x;
     document.getElementById("ay").innerHTML = '<b>Y:</b> ' + y;
     document.getElementById("az").innerHTML = '<b>Z:</b> ' + z;
-}
+};
+
+var handleCompassEvent = function(e){
+    var compassHeading = e.webkitCompassHeading;
+    document.getElementById("compassHeading").innerHTML = '<b>Heading:</b> ' + compassHeading;
+};
+
 window.addEventListener('deviceorientation', handleOrientationEvent, false);
 window.addEventListener('devicemotion', handleDeviceMotionEvent, false);
+window.addEventListener('deviceorientation', handleCompassEvent, false);
